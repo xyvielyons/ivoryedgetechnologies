@@ -49,6 +49,26 @@ export const PortfolioLinks = [
       key:"10",
       src:"https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7220087756490711040",
       name:"Creating 3d models using freecad and ondsel"
+    },
+    {
+      key:"11",
+      src:"https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7310200044568113152",
+      name:"Jengascheme- SAAS For Kenyan Teachers"
+    },
+    {
+      key:"12",
+      src:"https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7357969135575744512",
+      name:"prototyping smart water meter billing system"
+    },
+    {
+      key:"13",
+      src:"https://www.linkedin.com/embed/feed/update/urn:li:share:7354189303066849280",
+      name:"Mpesa Mobile Money Integration"
+    },
+    {
+      key:"14",
+      src:"https://www.linkedin.com/embed/feed/update/urn:li:share:7342467321862537216",
+      name:"Deployment Monitoring"
     }
     
   ]

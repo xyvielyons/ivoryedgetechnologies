@@ -10,17 +10,16 @@ import Testimonials from "@/components/shared/Testimonials";
 import Tawk from '@/lib/Tawk'
 export default function Home() {
   return (
-    <div className="dark:bg-black bg-background h-full max-w-screen-xl mx-auto space-y-2 md:space-y-4">
+    <div className="dark:bg-[#1A1A1A] bg-background h-full max-w-screen-xl mx-auto space-y-2 md:space-y-4">
       <NavbarComponent></NavbarComponent>
       <HeroSection></HeroSection>
-      <Partners></Partners>
       <About></About>
       <ServicesSection></ServicesSection>
       <Portfolio></Portfolio>
       <Pricing></Pricing>
       <Testimonials></Testimonials>
       <Footer></Footer>
-      <Tawk></Tawk> 
+      {/* <Tawk></Tawk>  */}
     </div>
   );
 }

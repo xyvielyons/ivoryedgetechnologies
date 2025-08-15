@@ -42,7 +42,7 @@ export default function NavbarComponent() {
 
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} isMenuOpen={isMenuOpen} className="shadow-4dp border-b-[1.2px] dark:border-gray-800 dark:bg-black border-gray-300 dark:opacity-85">
+    <Navbar onMenuOpenChange={setIsMenuOpen} isMenuOpen={isMenuOpen} className="shadow-4dp border-b-[1.2px] dark:border-gray-800 dark:bg-[#1A1A1A] border-gray-300 dark:opacity-85">
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -50,7 +50,7 @@ export default function NavbarComponent() {
         />
         <NavbarBrand>
           <div className="md:w-[150px] h-full w-[100px]">
-           <Image src="/ubuntu-web-high-resolution-logo-transparent.png" width={150} height={100} alt="image logo" className="dark:filter dark:brightness-0 dark:invert"></Image>
+           <Image src="/ivoryedge.png" width={150} height={100} alt="image logo" className="dark:filter dark:brightness-0 dark:invert"></Image>
           </div>
           
         </NavbarBrand>
@@ -59,7 +59,7 @@ export default function NavbarComponent() {
       <NavbarContent className="hidden sm:flex gap-4 dark:text-white" justify="center">
         <NavbarItem>
           <div className="flex flex-col items-center">
-              <Link to="Home" spy={true} smooth={true} offset={-60} duration={500} className={`text-[16px] ${nav==="Home"?"text-primarycolor font-medium":"text-gray-600"}`} onClick={()=>setNav("Home")}>
+              <Link to="Home" spy={true} smooth={true} offset={-60} duration={500} className={`text-[16px] ${nav==="Home"?"text-primarycolor font-medium":"text-gray-400"}`} onClick={()=>setNav("Home")}>
                 Home
               </Link>
               {nav==="Home" && <div className="w-6 h-1 bg-primarycolor rounded-sm"></div>}
@@ -70,7 +70,7 @@ export default function NavbarComponent() {
 
         <NavbarItem>
         <div className="flex flex-col items-center">
-          <Link to="Story" spy={true} smooth={true} offset={-60} duration={500} aria-current="page" className={`text-[16px] ${nav==="Story"?"text-primarycolor font-medium":"text-gray-600"}`} onClick={()=>setNav("Story")}>
+          <Link to="Story" spy={true} smooth={true} offset={-60} duration={500} aria-current="page" className={`text-[16px] ${nav==="Story"?"text-primarycolor font-medium":"text-gray-400"}`} onClick={()=>setNav("Story")}>
             Story
           </Link>
           {nav==="Story" && <div className="w-6 h-1 bg-primarycolor rounded-sm"></div>}
@@ -79,7 +79,7 @@ export default function NavbarComponent() {
 
         <NavbarItem>
         <div className="flex flex-col items-center">
-          <Link to="Services" spy={true} smooth={true} offset={-60} duration={500} className={`text-[16px]  ${nav==="Services"?"text-primarycolor font-medium":"text-gray-600"}`} onClick={()=>setNav("Services")}>
+          <Link to="Services" spy={true} smooth={true} offset={-60} duration={500} className={`text-[16px]  ${nav==="Services"?"text-primarycolor font-medium":"text-gray-400"}`} onClick={()=>setNav("Services")}>
             Services
           </Link>
           {nav==="Services" && <div className="w-6 h-1 bg-primarycolor rounded-sm"></div>}
@@ -88,7 +88,7 @@ export default function NavbarComponent() {
         </NavbarItem>
         <NavbarItem>
         <div className="flex flex-col items-center">
-          <Link to="Portfolio" spy={true} smooth={true} offset={-60} duration={500} className={`text-[16px]  ${nav==="Portfolio"?"text-primarycolor font-medium":"text-gray-600"}`} onClick={()=>setNav("Portfolio")}>
+          <Link to="Portfolio" spy={true} smooth={true} offset={-60} duration={500} className={`text-[16px]  ${nav==="Portfolio"?"text-primarycolor font-medium":"text-gray-400"}`} onClick={()=>setNav("Portfolio")}>
             Portfolio
           </Link>
           {nav==="Portfolio" && <div className="w-6 h-1 bg-primarycolor rounded-sm"></div>}
@@ -96,7 +96,7 @@ export default function NavbarComponent() {
         </NavbarItem>
         <NavbarItem>
         <div className="flex flex-col items-center">
-          <Link to="Pricing" spy={true} smooth={true} offset={-60} duration={500} className={`text-[16px]  ${nav==="Pricing"?"text-primarycolor font-medium":"text-gray-600"}`} onClick={()=>setNav("Pricing")}>
+          <Link to="Pricing" spy={true} smooth={true} offset={-60} duration={500} className={`text-[16px]  ${nav==="Pricing"?"text-primarycolor font-medium":"text-gray-400"}`} onClick={()=>setNav("Pricing")}>
             Pricing
           </Link>
           {nav==="Pricing" && <div className="w-6 h-1 bg-primarycolor rounded-sm"></div>}
@@ -104,7 +104,7 @@ export default function NavbarComponent() {
         </NavbarItem>
         <NavbarItem>
         <div className="flex flex-col items-center">
-          <Link to="Testimonials" spy={true} smooth={true} offset={-60} duration={500} className={`text-[16px]  ${nav==="Testimonials"?"text-primarycolor font-medium":"text-gray-600"}`} onClick={()=>setNav("Testimonials")}>
+          <Link to="Testimonials" spy={true} smooth={true} offset={-60} duration={500} className={`text-[16px]  ${nav==="Testimonials"?"text-primarycolor font-medium":"text-gray-400"}`} onClick={()=>setNav("Testimonials")}>
             Testimonials
           </Link>
           {nav==="Testimonials" && <div className="w-6 h-1 bg-primarycolor rounded-sm"></div>}
@@ -115,10 +115,10 @@ export default function NavbarComponent() {
       <NavbarContent justify="end" >
         <NavbarItem>
           <div className="flex space-x-[4px]">
-              <a href="https://wa.me/+254728440683" target='_blank'><button className="h-[40px] w-[32px]  flex items-center justify-center ">
+              <a href="https://wa.me/+254748601059" target='_blank'><button className="h-[40px] w-[32px]  flex items-center justify-center ">
                 <FaWhatsappSquare className="w-[24px] h-[24px] text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white"/>
               </button></a>
-              <a href="https://www.instagram.com/xaviertechnologies/" target='_blank'><button className="h-[40px] w-[32px]  flex items-center justify-center ">
+              <a href="https://www.instagram.com/xavier_mbugua/" target='_blank'><button className="h-[40px] w-[32px]  flex items-center justify-center ">
                 <FaInstagram className="w-[24px] h-[24px] text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white"/>
               </button></a>
               <a href="https://www.linkedin.com/in/xyvie-lyons-a8873820a" target='_blank'><button className="h-[40px] w-[32px]  flex items-center justify-center">

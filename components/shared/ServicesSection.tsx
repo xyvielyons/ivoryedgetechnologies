@@ -20,7 +20,7 @@ const ServicesSection = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 lg:grid-cols-3">
             {Services.map((service,i)=>(
-            <Card className='' key={i}>
+            <Card className='dark:bg-[#1A1A1A]' key={i}>
                 <CardHeader>
                     <Image src={service.image} alt={service.name} width={600} height={600} className='w-full rounded-md'></Image>
                     

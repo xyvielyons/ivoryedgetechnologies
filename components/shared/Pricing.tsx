@@ -34,7 +34,7 @@ const Portfolio = () => {
         </div>
         <div className="py-4 gap-2 md:gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <div className="">
-            <Card className=''>
+            <Card className='dark:bg-[#1A1A1A] dark:shadow-medium'>
               <CardHeader>
                 <CardTitle>
                   <div className="w-full">
@@ -45,7 +45,7 @@ const Portfolio = () => {
                   <div className="w-full space-y-2 border-b-[1px] border-gray-100 pb-4 dark:border-gray-800">
                     <p className='font-regular text-center text-sm'>Perfect for Small Businesses</p>
                     <p className='font-regular text-center text-sm'>starting at /</p>
-                    <h1 className='font-bold text-center text-[32px] text-gray-800 dark:text-gray-50'>Ksh 15000</h1>
+                    <h1 className='font-bold text-center text-[32px] text-gray-800 dark:text-gray-50'>Ksh 18000</h1>
                   </div>
                 </CardDescription>
               </CardHeader>
@@ -67,11 +67,11 @@ const Portfolio = () => {
           </div>
           <div className="">
             <ShineBorder
-              className="bg-background relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border md:shadow-xl"
+              className=" dark:bg-[#1A1A1A] bg-background relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border md:shadow-xl"
               color={['#A07CFE', '#FE8FB5', '#FFBE7B']}
               borderWidth={2}
             >
-              <Card>
+              <Card className='dark:bg-[#1A1A1A] dark:shadow-medium'>
                 <CardHeader>
                   <CardTitle>
                     <div className="w-full">
@@ -106,7 +106,7 @@ const Portfolio = () => {
             
           </div>    
           <div className="">
-            <Card>
+            <Card className='dark:bg-[#1A1A1A] dark:shadow-medium'>
               <CardHeader>
                 <CardTitle>
                   <div className="w-full">
@@ -139,7 +139,7 @@ const Portfolio = () => {
             </Card>
           </div>
           <div className="">
-            <Card>
+            <Card className='dark:bg-[#1A1A1A] dark:shadow-medium'>
               <CardHeader>
                 <CardTitle>
                   <div className="w-full">

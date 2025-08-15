@@ -8,9 +8,9 @@ import {
 
 const PortfolioCards = ({LinkedInIframes}:{LinkedInIframes:any}) => {
   return (
-<div className="grid gap-2 grid-cols-1 md:grid-cols-2 md:gap-4">
+<div className="grid gap-2 grid-cols-1 md:grid-cols-2 md:gap-4 ">
 {LinkedInIframes.map((iframe:any)=>(
-   <Card key={iframe.key}>
+   <Card key={iframe.key} className='dark:bg-[#1A1A1A]'>
    <CardHeader>
      <CardTitle>{iframe.name}</CardTitle>
    </CardHeader>
