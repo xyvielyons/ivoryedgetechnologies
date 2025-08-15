@@ -5,7 +5,7 @@ function About() {
   return (
     <div className='py-[32px] px-[8px] flex flex-col md:flex-row-reverse md:px-[16px] lg:px-[24px] gap-2 md:gap-4 border-b-[1px] border-gray-100 dark:border-gray-800' id="Story">
         <div className="w-full md:w-1/2 flex items-center justify-center">
-            <Image src="/about.png" alt="aboutImage" width={1024} height={1024} className='md:max-w-[500px] w-full rounded-md'></Image>
+            <Image src="/authentic-small-youthful-marketing-agency.webp" alt="aboutImage" width={1024} height={1024} className='md:max-w-[500px] w-full rounded-md'></Image>
         </div>
         <div className="p-4 w-full md:w-1/2 md:flex md:items-start md:justify-center md:flex-col">
             <div className="flex items-center justify-start">
