@@ -13,7 +13,7 @@ function About() {
                 <Image src="/crown.svg" alt="crown" width={60} height={60} className='ml-2 dark:filter dark:brightness-50 dark:invert'></Image>
             </div>
             <p className='text-[24px] mysubheading text-gray-800 dark:text-white'>“Passion-Driven Websites, Built to Perform.” </p>
-            <p className='pt-[16px] text-md text-gray-700 dark:text-slate-50'>At Ubuntu Web we don’t just build websites—we bring your ideas to life. What started as a vision to create unique, high-performing websites has turned into a passion for helping businesses like yours stand out online. 
+            <p className='pt-[16px] text-md text-gray-700 dark:text-slate-50'>At Ivoryedge technologies we don’t just build websites—we bring your ideas to life. What started as a vision to create unique, high-performing websites has turned into a passion for helping businesses like yours stand out online. 
             From day one, our team has been dedicated to crafting websites that work as hard as you do. Let’s build something unforgettable together. </p>
         </div>
         

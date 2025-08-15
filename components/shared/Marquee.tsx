@@ -1,26 +1,7 @@
-'use client'
 import { ny } from "@/lib/utils";
 import Marquee from "../ui/marquee";
-const reviews = [
-  {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
-  },
-  {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
-  },
-  {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/john",
-  },
-];
+
+import { reviews } from "@/constants/reviews";
 
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
@@ -39,7 +20,7 @@ const ReviewCard = ({
   return (
     <figure
       className={ny(
-        "relative h-fit pb-4 w-full cursor-pointer overflow-hidden rounded-xl border p-4",
+        "relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
@@ -60,21 +41,21 @@ const ReviewCard = ({
   );
 };
 
-export default function MarqueeDemoVertical() {
+export default function MarqueeDemo() {
   return (
-    <div className="relative flex h-[500px] w-full flex-row items-center justify-center overflow-hidden border bg-background rounded-sm dark:bg-[#1A1A1A]">
-      <Marquee pauseOnHover vertical className="[--duration:20s]">
+    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden bg-background">
+      <Marquee pauseOnHover className="[--duration:150s]">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
         ))}
       </Marquee>
-      <Marquee reverse pauseOnHover vertical className="[--duration:20s]">
+      <Marquee reverse pauseOnHover className="[--duration:150s]">
         {secondRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
         ))}
       </Marquee>
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-white dark:from-background"></div>
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-white dark:from-background"></div>
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
     </div>
   );
 }

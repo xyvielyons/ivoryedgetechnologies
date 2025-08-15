@@ -13,11 +13,11 @@ export default function Home() {
     <div className="dark:bg-[#1A1A1A] bg-background h-full max-w-screen-xl mx-auto space-y-2 md:space-y-4">
       <NavbarComponent></NavbarComponent>
       <HeroSection></HeroSection>
+      <Testimonials></Testimonials>
       <About></About>
       <ServicesSection></ServicesSection>
       <Portfolio></Portfolio>
       <Pricing></Pricing>
-      <Testimonials></Testimonials>
       <Footer></Footer>
       {/* <Tawk></Tawk>  */}
     </div>
